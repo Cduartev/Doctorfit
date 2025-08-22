@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { 
   Phone, 
   MapPin, 
@@ -7,12 +7,10 @@ import {
   Facebook, 
   Menu, 
   X,
-  Dumbbell,
   Users,
   Target,
   Award,
   Star,
-  Calendar,
   CheckCircle
 } from 'lucide-react';
 
@@ -29,7 +27,7 @@ function App() {
   }, []);
 
   const whatsappNumber = "5591999999999"; // Replace with actual WhatsApp number
-  const whatsappMessage = "Olá! Gostaria de saber mais sobre os planos da DoctorFit Belém";
+  const whatsappMessage = "Olá! Gostaria de saber mais sobre os planos da DoctorFit Umarizal";
 
   const openWhatsApp = (customMessage?: string) => {
     const message = customMessage || whatsappMessage;
@@ -115,13 +113,13 @@ function App() {
         <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
             Sua Melhor Versão na
-            <span className="text-custom-green block">DoctorFit Belém</span>
+            <span className="text-custom-green block">DoctorFit Umarizal</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto animate-fade-in-delay">
             Treine com os melhores profissionais em Belém do Pará
           </p>
           <button
-            onClick={() => openWhatsApp("Olá! Quero agendar um treino experimental na DoctorFit Belém")}
+            onClick={() => openWhatsApp("Olá! Quero agendar um treino experimental na DoctorFit Umarizal")}
             className="bg-custom-green hover:bg-custom-green-dark text-gray-900 px-12 py-4 rounded-full text-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-custom-green/40 animate-bounce-subtle"
           >
             Fale Agora no WhatsApp
@@ -136,7 +134,7 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Sobre a <span className="text-custom-green">DoctorFit Belém</span>
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-500 max-w-3xl mx-auto">
               Mais que uma academia, somos um estilo de vida dedicado à transformação pessoal
             </p>
           </div>
@@ -145,7 +143,7 @@ function App() {
             <div>
               <h3 className="text-3xl font-bold mb-6 text-custom-green">Nossa História</h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                A DoctorFit Belém nasceu com o propósito de revolucionar o fitness na capital paraense. 
+                A DoctorFit Umarizal nasceu com o propósito de revolucionar o fitness na capital paraense. 
                 Com equipamentos de última geração e profissionais altamente qualificados, oferecemos 
                 uma experiência única de treinamento.
               </p>
@@ -247,7 +245,7 @@ function App() {
                   <h3 className="text-2xl font-bold mb-3 text-custom-green">{modality.title}</h3>
                   <p className="text-gray-400 mb-4">{modality.description}</p>
                   <button
-                    onClick={() => openWhatsApp(`Olá! Gostaria de saber mais sobre ${modality.title} na DoctorFit Belém`)}
+                    onClick={() => openWhatsApp(`Olá! Gostaria de saber mais sobre ${modality.title} na DoctorFit Umarizal`)}
                     className="bg-custom-green hover:bg-custom-green-dark text-gray-900 px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
                   >
                     Saiba Mais
@@ -314,7 +312,7 @@ function App() {
 
           <div className="text-center mt-12">
             <button
-              onClick={() => openWhatsApp("Olá! Gostaria de agendar uma visita para conhecer a estrutura da DoctorFit Belém")}
+              onClick={() => openWhatsApp("Olá! Gostaria de agendar uma visita para conhecer a estrutura da DoctorFit Umarizal")}
               className="bg-custom-green hover:bg-custom-green-dark text-gray-900 px-12 py-4 rounded-full text-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-custom-green/40"
             >
               Agende uma Visita
@@ -418,7 +416,7 @@ function App() {
                 </ul>
 
                 <button
-                  onClick={() => openWhatsApp(`Olá! Tenho interesse no ${plan.name} da DoctorFit Belém. Gostaria de mais informações!`)}
+                  onClick={() => openWhatsApp(`Olá! Tenho interesse no ${plan.name} da DoctorFit Umarizal. Gostaria de mais informações!`)}
                   className={`w-full py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
                     plan.highlighted
                       ? 'bg-custom-green hover:bg-custom-green-dark text-gray-900 shadow-lg hover:shadow-custom-green/30'
@@ -441,7 +439,7 @@ function App() {
              O que nossos <span className="text-custom-green">alunos dizem</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Histórias reais de transformação na DoctorFit Belém
+              Histórias reais de transformação na DoctorFit Umarizal
             </p>
           </div>
 
@@ -487,7 +485,7 @@ function App() {
 
           <div className="text-center mt-12">
             <button
-              onClick={() => openWhatsApp("Olá! Vi os depoimentos dos alunos e gostaria de começar minha transformação na DoctorFit Belém!")}
+              onClick={() => openWhatsApp("Olá! Vi os depoimentos dos alunos e gostaria de começar minha transformação na DoctorFit Umarizal!")}
               className="bg-custom-green hover:bg-custom-green-dark text-gray-900 px-12 py-4 rounded-full text-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-custom-green/40"
             >
               Comece sua Transformação
@@ -559,7 +557,7 @@ function App() {
                 </div>
 
                 <button
-                  onClick={() => openWhatsApp("Olá! Gostaria de agendar um treino experimental na DoctorFit Belém")}
+                  onClick={() => openWhatsApp("Olá! Gostaria de agendar um treino experimental na DoctorFit Umarizal")}
                   className="w-full mt-6 bg-custom-green hover:bg-custom-green-dark text-gray-900 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-custom-green/30"
                 >
                   Agende um Treino Experimental
@@ -591,7 +589,7 @@ function App() {
               <div className="flex items-center space-x-2 mb-4">
                 <img 
                   src="/logo-doctorfit.png" 
-                  alt="DoctorFit Belém" 
+                  alt="DoctorFit Umarizal" 
                   className="h-10 w-auto"
                 />
               </div>
@@ -651,7 +649,7 @@ function App() {
 
           <div className="border-t border-gray-700 mt-12 pt-8 text-center">
             <p className="text-gray-400">
-              © 2024 DoctorFit Belém. Todos os direitos reservados.
+              © 2025 DoctorFit Umarizal. Todos os direitos reservados.
             </p>
           </div>
         </div>
@@ -664,47 +662,6 @@ function App() {
       >
         <Phone className="w-8 h-8" />
       </button>
-
-      <style jsx>{`
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes bounce-subtle {
-          0%, 20%, 50%, 80%, 100% {
-            transform: translateY(0);
-          }
-          40% {
-            transform: translateY(-10px);
-          }
-          60% {
-            transform: translateY(-5px);
-          }
-        }
-
-        .animate-fade-in {
-          animation: fade-in 1s ease-out;
-        }
-
-        .animate-fade-in-delay {
-          animation: fade-in 1s ease-out 0.3s both;
-        }
-
-        .animate-bounce-subtle {
-          animation: bounce-subtle 2s infinite;
-        }
-
-        html {
-          scroll-behavior: smooth;
-        }
-      `}</style>
     </div>
   );
 }
