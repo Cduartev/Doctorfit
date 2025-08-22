@@ -132,7 +132,7 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Sobre a <span className="text-custom-green">DoctorFit Belém</span>
+              Sobre a <span className="text-custom-green">DoctorFit Umarizal</span>
             </h2>
             <p className="text-xl text-gray-500 max-w-3xl mx-auto">
               Mais que uma academia, somos um estilo de vida dedicado à transformação pessoal
